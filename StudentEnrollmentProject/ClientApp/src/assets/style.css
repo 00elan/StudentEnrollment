@@ -1,0 +1,737 @@
+/* NAVBAR STYLE */
+header {
+  background-color: darkslategray;
+  width: 100%;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+}
+
+nav .menu-item {
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 10px;
+  position: relative;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+nav .menu-item.active,
+nav .menu-item:hover {
+  background-color: #444;
+  border-bottom-color: #d2e0fb;
+}
+
+nav .menu-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav h1 a {
+  text-decoration: none;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+/* HOMEVIEW STYLE */
+main {
+  display: flex;
+}
+
+.stud table,
+.subj table {
+  margin-left: 75px;
+  border-collapse: collapse;
+  width: 300px;
+  margin-top: 60px;
+  height: 150px;
+}
+
+.stud .total,
+.stud .all,
+.subj .totals {
+  display: flex;
+}
+
+.stud h1 {
+  margin-left: 150px;
+  font-size: 60px;
+  color: white;
+}
+
+.stud h2,
+.subj h2 {
+  text-align: end;
+  font-size: 20px;
+  margin-right: 20px;
+  color: white;
+}
+
+.stud td,
+.subj td {
+  padding: 5px;
+  border: 1px solid;
+  border-color: #4a64ac;
+}
+
+.stud tr:first-child {
+  background-color: #337ccf;
+}
+
+.stud tr:nth-child(2) {
+  background-color: #d2e0fb;
+}
+
+.stud table button,
+.subj table button {
+  padding-left: 15px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 5px;
+  color: #12486b;
+}
+
+.subj tr:first-child {
+  background-color: #219c90;
+}
+
+.subj tr:nth-child(2) {
+  background-color: #c7e7b6;
+}
+
+.subj h1 {
+  margin-left: 120px;
+  font-size: 60px;
+  color: white;
+}
+
+/* NEWSTUDTABLE STYLE */
+.home {
+  background-color: (0, 176, 234, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+#hometable {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+#hometable thead {
+  background-color: #6784d4;
+}
+
+#hometable th {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid;
+  color: black;
+}
+
+#hometable td {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid;
+  font-size: 20px;
+  color: black;
+}
+
+#hometable tr:hover {
+  background-color: #cdcdcd;
+}
+
+#hometable td .edit {
+  background-color: #6499e9;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 40px;
+  width: 70px;
+  text-align: center;
+  border: none;
+}
+
+#hometable td .delete {
+  border-radius: 10px;
+  font-size: 20px;
+  height: 40px;
+  width: 70px;
+  text-align: center;
+  border: none;
+  margin-left: 20px;
+  background-color: #f15a59;
+  cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* STUDENTINFO MODAL STYLE */
+.modalstudentinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-inner-info {
+  position: relative;
+  height: 500px;
+  width: 70%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #d2e0fb;
+  padding: 16px;
+  border-radius: 30px;
+}
+
+.modal-content-info {
+  display: flex;
+  
+}
+
+.student-studentinfo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.stud-subj-title {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.stud-subj-title h1,
+.stud-subj-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stud-subj-title h2 {
+  margin-right: 110px;
+  margin-left: 40px;
+}
+.line{
+    margin-top: 50px;
+    border-left: 4px solid #2c3e50;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+.title-studentinfo {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+p1-studentinfo {
+  margin-left: 10px;
+  font-size: 20px;
+  color: black;
+
+}
+
+p2-studentinfo {
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+.subjectinfo {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+#subjectinfo {
+  width: 400px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  display: flex;
+  height: 275px;
+  overflow-y: auto;
+  margin-top: 5px;
+  border-collapse: collapse;
+}
+
+#subjectinfo thead {
+  background-color: transparent;
+}
+
+#subjectinfo th {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2c3e50;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid;
+  border-color: transparent;
+}
+
+#subjectinfo td {
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid;
+  border-color: transparent;
+  color: black;
+}
+
+/* UPDATE MODAL STYLE */
+.updatestudent {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+p1-updatestudent {
+  margin-left: 10px;
+  font-size: 25px;
+  color: black;
+}
+
+p2-updatestudent {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.home2-updatestudent {
+  background-color: (0, 176, 234, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.modal-contents-updatestudent {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-updatestudent {
+  margin-top: 10px;
+  display: flex;
+  height: 25px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.dob-updatestudent {
+  margin-top: 10px;
+  display: flex;
+  height: 25px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.name-updatestudent p , .dob-updatestudent p {
+    font-weight: bold;
+}
+
+#subjectupdate {
+  margin-left: 90px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#subjectupdate thead {
+  background-color: transparent;
+}
+
+#subjectupdate th {
+    text-align: center;
+    padding: 4px;
+    border: 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#subjectupdate td {
+
+  border: 1px solid;
+  text-align: left;
+  padding: 3px;
+  font-size: 15px;
+  color: #000000;
+}
+
+.name-updatestudent input[type="text"] {
+  margin-left: 15px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+input[type="checkbox"]:hover {
+  background-color: #f2f2f2;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+table th:first-child input[type="checkbox"],
+table td:first-child input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+table th:first-child input[type="checkbox"]:hover,
+table td:first-child input[type="checkbox"]:hover {
+  background-color: transparent;
+}
+
+.update-buttons .save {
+  padding-top: 3px;
+  text-align: center;
+  height: 40px;
+  width: 15%;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000000;
+  border-color: #6784d4;
+  background-color: transparent;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.update-buttons {
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.custom-alert-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-alert-dialog {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-height: 100vh;
+  /* Set a maximum height for the dialog */
+  overflow-y: auto;
+  /* Enable vertical scrolling if content overflows */
+}
+
+.message {
+  font-size: 20px;
+}
+
+.primary-button {
+  margin-top: 10px;
+  background-color: #6784d4;
+  height: 40px;
+  width: 15%;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.secondary-button {
+  margin-top: 10px;
+  background-color: #f15a59;
+  height: 40px;
+  width: 20%;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* ADD STUDENT STYLE */
+#appStudent .modal-inner-add {
+  position: relative;
+  height: 650px;
+  width: 70%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #d2e0fb;
+  padding: 16px;
+  border-radius: 30px;
+}
+
+#appStudent .home-addstudent {
+  background-color: (0, 176, 234, 0.5);
+}
+#appStudent .modal-content-addstudent{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#appStudent p{
+  font-size: 20px;
+  font-weight: bold;
+}
+#appStudent .name-addstudent input[type="text"], #appStudent .dob-addstudent input[type="text"]{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 30px;
+  width: 300px;
+}
+#appStudent .dob-addstudent input[type="date"]{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+#appStudent .dob-addstudent{
+margin-top: 10px;
+}
+
+
+
+/* #appStudent .name-addstudent p,
+#appStudent .dob-addstudent p {
+  font-weight: bold;
+}
+
+#appStudent .name-addstudent {
+  margin-top: 5px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#appStudent .name-addstudent input[type="text"],
+#appStudent .dob-addstudent input[type="text"],
+#appStudent .dob-addstudent input[type="date"] {
+  margin-left: 15px;
+}
+
+#appStudent .dob-addstudent {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+} */
+
+#appStudent .subject-addstudent {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+#appStudent #addstudent-table {
+  width:450px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  height: 270px;
+  overflow-y: auto;
+  margin-top: 5px;
+  border-collapse: collapse;
+}
+
+
+#appStudent #addstudent-table th {
+  text-align: center;
+  padding: 4px;
+  border: 1px solid;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#appStudent #addstudent-table td {
+  border: 1px solid;
+  padding: 4px;
+  font-size: 15px;
+  color: #000000;
+}
+
+#appStudent #addstudent-table input[type="checkbox"] {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#appStudent .buttons-addstudent .save {
+  padding-top: 3px;
+  font-size: 15px;
+  text-align: center;
+  height: 40px;
+  width: 20%;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #6784d4;
+}
+
+#appStudent .buttons-addstudent {
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+#appStudent .addicon {
+  display: flex;
+  justify-content: end;
+  margin-right: 100px;
+}
+
+#appStudent .text-danger{
+  color: red;
+}
+#appStudent .inputError, #appStudent .inputError2{
+  display: flex;
+  justify-content: center;
+}
+#appStudent label{
+  margin-left: 15px;
+}
+
+/* CODE FOR ALL MODAL */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-inner {
+  position: relative;
+  height: 650px;
+  width: 70%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #d2e0fb;
+  padding: 16px;
+  border-radius: 30px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upper h1 {
+  margin-left: 20px;
+  font-size: 30px;
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+}
+
+.upper i svg {
+  margin-top: 5px;
+  text-align: center;
+  height: 40px;
+  width: 90px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* SUBJECT STYLE */
+#app .home-subjectpage {
+  background-color: (0, 176, 234, 0.5);
+}
+
+#app .modal-content-subject {
+  display: flex;
+  margin-left: 100px;
+}
+
+#app .home-subjectpage table {
+  border-collapse: collapse;
+  width: 75%;
+  height: 450px;
+}
+
+#app #home-subjectpagetable tr {
+  background-color: transparent;
+}
+
+#app #home-subjectpagetable th {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid;
+  color: black;
+}
+
+#home-subjectpagetable td {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid;
+  color: black;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+#subjh1 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: rgb(44, 62, 80);
+  font-weight: bold;
+  margin-left: 20px;
+}
